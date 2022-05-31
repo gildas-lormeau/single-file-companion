@@ -1,0 +1,10 @@
+{
+	"name": "single-file-companion",
+	"version": "1.0.0",
+	"description": "SingleFile Companion",
+	"author": "Gildas Lormeau",
+	"license": "AGPL-3.0-or-later",
+	"dependencies": {
+		"single-file-cli": "1.0.0"
+	}
+}

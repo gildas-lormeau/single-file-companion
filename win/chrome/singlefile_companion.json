@@ -1,0 +1,11 @@
+{
+    "name": "singlefile_companion",
+    "description": "SingleFile Companion",
+    "path": "single-file-companion.bat",
+    "type": "stdio",
+    "allowed_origins": [
+        "chrome-extension://mpiodijhokgodhhofbcjdecpffjipkle/",
+        "chrome-extension://efnbkdcfmcmnhlkaijjjmhjjgladedno/",
+        "chrome-extension://pfocgciignlhlijcdpkbhmioobagfpmd/"
+    ]
+}
