@@ -19,6 +19,8 @@ to communicate with SingleFile.
 
 - Install [Node.js](https://nodejs.org)
 
+- Install [jq](https://stedolan.github.io/jq/), the JSON processor
+
 - Download the
   [SingleFile Companion project](https://github.com/gildas-lormeau/single-file-companion/archive/master.zip)
   zip file and unzip it somewhere on your disk.
