@@ -72,7 +72,10 @@ async function externalSave(message) {
 	await backend.initialize(companionOptions);
 	try {
 		const pageData = await backend.getPageData(message);
-		pageData.filename = path.resolve("../../", (companionOptions.savePath || ""), pageData.filename);
+		const fileDirectory = path.parse(pageData.filename).dir;
+		const basePath = path.resolve("../../", (companionOptions.savePath || ""), fileDirectory);
+		fs.mkdirSync(basePath, { recursive: true });
+		pageData.filename = path.resolve(basePath, path.relative(fileDirectory, pageData.filename));
 		fs.writeFileSync(getFilename(pageData.filename), pageData.content);
 		return pageData;
 	} catch (error) {
