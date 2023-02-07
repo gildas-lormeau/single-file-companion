@@ -51,7 +51,7 @@ process.stdin
 	.pipe(new nativeMessage.Output())
 	.pipe(process.stdout);
 
-async function processMessage(message) {
+function processMessage(message) {
 	if (message.method == "save") {
 		return save(message.pageData);
 	}
@@ -60,7 +60,7 @@ async function processMessage(message) {
 	}
 }
 
-async function save(message) {
+function save(message) {
 	const companionOptions = require("./options.json");
 	const filename = path.resolve("../../", (companionOptions.savePath || ""), message.filename);
 	fs.writeFileSync(getFilename(filename), message.content);
