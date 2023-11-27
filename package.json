@@ -5,6 +5,6 @@
 	"author": "Gildas Lormeau",
 	"license": "AGPL-3.0-or-later",
 	"dependencies": {
-		"single-file-cli": "1.1.36"
+		"single-file-cli": "1.1.37"
 	}
 }
